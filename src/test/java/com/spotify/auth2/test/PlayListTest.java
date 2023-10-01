@@ -62,7 +62,8 @@ public void assertStatusCode(int actualStatusCode, int expectedStatusCode)
         assertPlaylistEqual(requestPlaylist,response.as(Playlist.class));
     }
 
-    @Test
+    @Description("this is the description for getting the data of Playlist")
+    @Test(description ="Get the data from playlist")
     public void shouldbeAbletoGetaPayList()
     {
         Playlist requestPlaylist = Playlist.builder().build();
