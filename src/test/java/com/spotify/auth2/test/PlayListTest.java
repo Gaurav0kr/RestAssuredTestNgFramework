@@ -53,7 +53,7 @@ public void assertStatusCode(int actualStatusCode, int expectedStatusCode)
 }
 
     String invalid_token = "aabcd990abba";
-   @Description("this is the description")
+   @Description("this is the dummy description")
     @Test(description ="Creating a playlist")
     public void shouldbeAbletoCreatePayList() {
         Playlist requestPlaylist = playlistBuilder("New Playlist","New playlist description",false);
