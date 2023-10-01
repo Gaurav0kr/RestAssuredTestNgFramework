@@ -54,7 +54,7 @@ public void assertStatusCode(int actualStatusCode, int expectedStatusCode)
 
     String invalid_token = "aabcd990abba";
    @Description("this is the description")
-    @Test(description ="Human-readable test name")
+    @Test(description ="Creating a playlist")
     public void shouldbeAbletoCreatePayList() {
         Playlist requestPlaylist = playlistBuilder("New Playlist","New playlist description",false);
         Response response = PlayistAPI.post(requestPlaylist);
